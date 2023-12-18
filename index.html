@@ -1,4 +1,4 @@
-﻿<html lang="en">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -96,16 +96,16 @@
       </g>
     </svg>
   </p>
-  <p class="our-name self-design">Lu <span>&</span> Deng</p>
+  <p class="our-name self-design">Pramod <span>&</span> Praty</p>
   <script type="text/javascript">
     countTime('2024/02/18 00:00', 'day', 'hour', 'minute', 'second');
     var days = parseInt($('#day').text());
     var years = new Date().getFullYear();
     var month = new Date().getMonth() + 1;
     var dateDay = new Date().getDate();
-    if (month == 2 && dateDay == 12) {
+    if (month == 2 && dateDay == 18) {
       $(document).attr("title", "在一起" + parseInt(years - 2017) + "年,始于初见,终于到老。");
-    } else if (dateDay == 12) {
+    } else if (dateDay == 18) {
       $(document).attr("title", "在一起" + parseInt(days / 30) + "个月,始于初见,终于到老。");
     } else
       $(document).attr("title", "在一起" + days + "天,始于初见,终于到老。");
@@ -307,15 +307,11 @@
   }, false);
 
   function loadImage(imgIndex) {
-    // console.log('imgIndex:',imgIndex);
-    // var img = new Image();
     curImgDom.src = imgList[imgIndex];
-    // curImgDom.setAttribute('src', imgList[imgIndex]);
     if (isInitImage) {
       $('.img-intro').text(imgDescList[imgIndex]);
       return;
     } else {
-      // curImgDom.src = imgList[imgIndex];
       if (curImgDom.complete) {
         $('.img-intro').text(imgDescList[imgIndex]);
         return false;
