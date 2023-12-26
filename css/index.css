@@ -161,11 +161,11 @@ ul {
   left: -10px;
 }
 
-/* .date>span {
+.date>span {
   font-size: 36px;
   position: relative;
   color: #3E4149;
-} */
+}
 
 .date-text {
   color: white;
@@ -183,7 +183,7 @@ ul {
   height: 73px;
 } */
 
-.our-name {
+/* .our-name {
   position: relative;
   font-size: 32px;
   margin-top: 20px;
@@ -191,7 +191,7 @@ ul {
   display: flex;
   align-items: center;
   cursor: pointer;
-}
+} */
 
 /* .our-name>span {
   color: #ff9999;
