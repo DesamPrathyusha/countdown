@@ -161,11 +161,11 @@ ul {
   left: -10px;
 }
 
-.date>span {
+/* .date>span {
   font-size: 36px;
   position: relative;
   color: #3E4149;
-}
+} */
 
 .date-text {
   color: white;
@@ -177,11 +177,11 @@ ul {
   left: 14px;
 }
 
-.svg {
+/* .svg {
   margin-top: 50px;
   width: 150px;
   height: 73px;
-}
+} */
 
 .our-name {
   position: relative;
@@ -193,7 +193,7 @@ ul {
   cursor: pointer;
 }
 
-.our-name>span {
+/* .our-name>span {
   color: #ff9999;
   font-size: 48px;
-}
+} */
