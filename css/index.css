@@ -167,7 +167,7 @@ ul {
   color: #3E4149;
 }
 
-.date-text {
+/* .date-text {
   color: white;
   font-size: 14px;
   word-spacing: 20px;
@@ -175,7 +175,7 @@ ul {
   font-weight: lighter;
   position: relative;
   left: 14px;
-}
+} */
 
 .svg {
   margin-top: 50px;
