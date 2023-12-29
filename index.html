@@ -16,8 +16,10 @@
   <meta name="theme-color" content="#f7d7da">
   <!-- 配置Open graph -->
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jackluson.github.io/to-lover-demo/">
   <meta property="og:description" content="idea">
   <meta property="og:title" content="hey！">
+  <meta property="og:image" content="https://jackluson.github.io/to-lover-demo/pic-icon.png">
   <meta property="og:image:width" content="140">
   <meta property="og:image:height" content="109">
   <title>Countdown！</title>
@@ -45,28 +47,28 @@
     <i class="iconfont music-close">&#xea28;</i>
     <!-- <audio class="audio" src="./media/dongxi-md.mp3" preload autoplay loop></audio>  -->
     <audio class="audio" preload autoplay loop>
-      <source src="./media/Beginning Middle End – Leah Nobel (From Netflix’s “To All The Boys- Always and Forever”) Lyric Video (1).mp3" type="audio/mp3" /> Your browser does not support the audio element.
+      <source src="./media/zui-mei-qing-lv-cut.mp3" type="audio/mp3" /> Your browser does not support the audio element.
     </audio>
   </div>
   <div class="banner ovh">
     <div class="swiper-wrap">
       <!-- <img src="./images/DSC_0692_mix01.jpg" alt=""> -->
       <!-- <img src="./img/20180319230435.jpg" alt=""> -->
-      <img id="current-img" src="./images/c8fb2ff3-b597-4291-a15a-e9d23015e388.jpg" alt="">
-      <p class="img-intro">Beginning of our Forever</p>
+      <img id="current-img" src="./images/adult-bicycle-bike-1878704.jpg" alt="">
+      <p class="img-intro">Bicycle</p>
     </div>
     <!-- <video class="video hide" webkit-playsinline="" playsinline="" x5-playsinline="" controls loop src=""></video> -->
   </div>
-    <p class="intro self-design">Countdown to FOREVER</p>
+  <p class="intro self-design">Countdown to FOREVER</p>
   <p class="date self-design">
     <span id="day" class="time-font"></span>
-    <span class="date-icon" style="color:#FF9999" data-text="days">:</span>
+    <span class="date" style="color:#FF9999" data-text="days">/</span>
     <span id="hour" class="time-font"></span>
-    <span class="date-icon" style="color:#FF9999" data-text="hours">:</span>
+    <span class="date" style="color:#FF9999" data-text="hours">/</span>
     <span id="minute" class="time-font"></span>
-    <span class="date-icon" style="color:#FF9999" data-text="mins">:</span>
+    <span class="date" style="color:#FF9999" data-text="min">/</span>
     <span id="second" class="time-font"></span>
-    <span class="date-icon" style="color:#FF9999" data-text="secs">:</span>
+    <span class="date" style="color:#FF9999" data-text="sec">/</span>
   </p>
 <!--   <p class="svg">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="9001302152"
@@ -94,13 +96,22 @@
       </g>
     </svg>
   </p> -->
-  <p class="our-name ">Pramod <span>&</span> Praty</p>
+  <p class="our-name self-design">Pramod <span>&</span> Praty</p>
   <script type="text/javascript">
     countTime('2024/02/18 00:00', 'day', 'hour', 'minute', 'second');
     var days = parseInt($('#day').text());
     var years = new Date().getFullYear();
     var month = new Date().getMonth() + 1;
     var dateDay = new Date().getDate();
+    if (month == 2 && dateDay == 18) {
+      $(document).attr("title", "在一起" + parseInt(years - 2017) + "年,始于初见,终于到老。");
+    } else if (dateDay == 18) {
+      $(document).attr("title", "在一起" + parseInt(days / 30) + "个月,始于初见,终于到老。");
+    } else
+      $(document).attr("title", "在一起" + days + "天,始于初见,终于到老。");
+    document.writeln(
+      "<div class=\"snow\" style=\"height:100%; position:fixed; left:0px; top:0px;right:0px; bottom:0px; pointer-events: none;z-index: 9999;\"><canvas width=\"1904\" height=\"913\" style=\"position:absolute;left: 0;top: 0;\"></canvas></div>"
+    );
 
     $(function () {
 
@@ -311,8 +322,8 @@
     }
 
   }
-  var imgList = ['./images/45de200a-e157-43f6-82ce-dbe8219dfe83.jpg','./images/c8fb2ff3-b597-4291-a15a-e9d23015e388.jpg','./images/d03844c0-58c2-42a1-8261-51fdb9ca4daf.jpg','./images/ece21ac6-6326-4ec0-a2a7-78e61223cc8d.jpg'];
-  var imgDescList = [ '2',  '6', '7','10'];
+  var imgList = ['./images/adult-bicycle-bike-1878704.jpg', './images/alone-boulders-idyllic-426893.jpg', './images/back-view-blur-carefree-1892512.jpg', './images/balance-clothes-colors-1882003.jpg', './images/bowl-cooking-cuisine-1640773.jpg', './images/camera-lens-clouds-hand-1208074.jpg', './images/louie-castro-garcia-1355308-unsplash.jpg'];
+  var imgDescList = ['让我们携手放飞梦想,扬帆起航', '想不到被我拍到了吧，最喜欢下班后吃到香喷喷的饭菜了。', 'TIT创意园,这够不够创意啦!<br>!', '名师出高徒可不是闹着玩的。', '第一次用抖音拍照，效果不赖吧！', '宝贝,祝你在新的一年里红红火火，行大运！', '七色彩圈,印证我们走过的点点滴滴'];
   var isInitImage = false;
   var imgIndex = 0;
   function setTimer() {
